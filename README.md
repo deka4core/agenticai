@@ -7,7 +7,6 @@
 - [Обзор проекта](#обзор-проекта)
 - [Структура проекта](#структура-проекта)
 - [Эксперименты](#эксперименты)
-- [Архитектура модели](#архитектура-модели)
 - [Федеративное обучение](#федеративное-обучение)
 - [Результаты](#результаты)
 - [Установка и запуск](#установка-и-запуск)
@@ -39,22 +38,18 @@ agenticai/
 │
 ├── models/
 │   ├── densenet_tomato.pth      # Веса DenseNet (болезни)
-│   ├── mobilenet_tomato.pth     # Веса MobileNet (болезни)
-│   ├── yolov8_weed.pt           # Веса YOLOv8 (сорняки)
 │   ├── efficientdet_weed.pth    # Веса EfficientDet (сорняки)
-│   └── global_model_final.pth   # Финальная мультизадачная модель
+│   └── global_model.pth   #  мультизадачная модель
 │
 ├── src/
 │   ├── backbone.py          # Архитектура GlobalModel
-│   ├── train_local.py       # Обучение отдельных моделей
-│   ├── federated_learning.py # Федеративное обучение
-│   ├── test_model.py        # Тестирование моделей
-│   └── utils.py             # Вспомогательные функции
+│   ├── densenet_default.py  # Обучение densenet отдельно
+│   ├── edet.py              # Обучение EfficientDet отдельно
+│   ├── testing_global.py    # Тестирование модели
 │
-├── results/
+├── analysis/
 │   ├── confusion_matrices/  # Матрицы ошибок
-│   ├── training_curves/     # Графики обучения
-│   └── metrics.csv          # Сводные метрики
+│   └── model_predictions    # Тесты модели
 │
 ├── README.md
 ├── requirements.txt
