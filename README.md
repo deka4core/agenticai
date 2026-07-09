@@ -287,7 +287,7 @@ print(f"Результат: {'Сорняк' if is_weed else 'Культура'}"
 ```
 ##  Ссылки
 
-- [Статья: Agentic AI for smart and sustainable precision agriculture]([https://doi.org/10.3389/fpls.2025.1706428](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1706428/full#s5))
+- [Статья: Agentic AI for smart and sustainable precision agriculture](https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1706428/full#s5)
 - [Датасет болезней томатов](https://www.kaggle.com/datasets/ashishmotwani/tomato)
 - [Датасет WeedCrop](https://www.kaggle.com/datasets/vinayakshanawad/weedcrop-image-dataset)
 
