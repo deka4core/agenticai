@@ -275,7 +275,7 @@ from src.backbone import GlobalModel
 # Загрузка обученной модели
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = GlobalModel().to(device)
-model.load_state_dict(torch.load("models/global_model_final.pth"))
+model.load_state_dict(torch.load("src/models/full_global_model.pth"))
 model.eval()
 
 # Классификация болезней томатов
